@@ -3,18 +3,18 @@
 from pyrogram import Client, filters, types as t
 from bot import StartTime
 
-startText = """
-An AntiNSFW bot Powered by @LexicaAPI to protect your groups from NSFW content.
-"""
+startText = ```
+HELLO 👋 I AM ADULT CONTENT DETECTOR BOT.I CAN DETECT ADULT CONTENT IN YOUR GROUPS AND PREVENT THEM FROM BEING BANNED
+```
 
-@Client.on_message(filters.command(["start","help","repo","source"]))
+@Client.on_message(filters.command(["start","help","support","channel"]))
 async def start(_: Client, m: t.Message):
     await m.reply_text(
         startText,
         reply_markup=t.InlineKeyboardMarkup(
             [
                 [
-                    t.InlineKeyboardButton(text="Source",url="https://github.com/Qewertyy/AntiNSFWRobot")
+                    t.InlineKeyboardButton(text="support",url="https:t.me/Thealphabotz")
                 ]
             ]
         )
